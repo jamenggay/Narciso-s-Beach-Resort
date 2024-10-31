@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #E0F4FF !important; 
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header {
+    background: #E0F4FF;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    height: 3.2rem;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #39A7FF;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+}
+
+.main-nav {
+    position: relative;
+    
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em; 
+    margin-right: 10px; 
+}
+
+.main-nav a {
+    text-transform: uppercase;
+    color: #34495e;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.main-nav a:hover {
+    background-color: #87C4FF;
+    color: #FFEED9;
+}
+
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #39A7FF;
+}
+.hero {
+    background: url('./images/dining/bg.jpg') no-repeat center center/cover; 
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff; 
+}
+
+.text-container {
+    background-color: rgba(0, 79, 115, 0.7);
+    padding: 2rem; 
+    border-radius: 10px; 
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.8rem 2rem;
+    background-color: #FFEED9;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e76f51;
+}
+
+
+.menu-section {
+    /* padding: 4rem 0; */
+    background-color: #ffffff;
+    margin-top: 100px;
+}
+
+.menu-section .container {
+    background-color: #E0F4FF !important;
+    display: flex;
+    justify-content: center; 
+    align-items: center;      
+    flex-direction: column;   
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    width: 100%;
+}
+.menu-item {
+    background-color: #F8F6E3; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    padding: 1rem; 
+}
+
+.menu-item img {
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.menu-item h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    
+}
+.menu{
+    color: #39A7FF;
+}
+
+
+.menu-item .price {
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+    
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-category {
+    margin: 2rem 0; 
+}
+
+.menu-category h3 {
+    font-size: 1.8rem; 
+    margin-bottom: 1rem; 
+    color: #39A7FF; 
+}
+
+.menu-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 1rem; 
+}
+
+
+
+.menu-item img {
+    width: 100%; 
+    border-radius: 10px 10px 0 0; 
+}
+
+.footer-section {
+    
+    background: #E0F4FF;
+    padding: 3em 0;
+    color: #34495e;
+    margin-top: 100px;
+}
+
+.footer-section .footer-cta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.cta-box {
+    text-align: center;
+    flex: 1;
+    margin: 0 1em;
+}
+
+.cta-box i {
+    font-size: 2rem;
+    color: #39A7FF;
+    margin-bottom: 0.5em;
+}
+
+.cta-box h4 {
+    margin-bottom: 0.3em;
+    font-weight: 600;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 1.5em;
+    color: #34495e;
+}
+
+.footer-logo img {
+    width: 100px;
+	height: 100px;
+}
+
+.footer-social a {
+    font-size: 2rem;
+    color: #34495e;
+    margin: 0px 10px;
+	margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #39A7FF;
+}
+
+.footer-bottom {
+    background: #39A7FF;
+    padding: 1.2em 0;
+    text-align: center;
+    color: #34495e;
+    font-size: 0.9rem;
+}
